@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110_960_720.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    font-weight: 600;
+}
+
+label[class="error"] {
+    color: #E73635;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin-bottom: 0px !important;
+}
+
+.modal ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.modal ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+.form-control.error,
+.form-select.error {
+  border: 1px solid #E73635 !important;
+}
+
+button:focus,
+input:focus,
+select:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.swal2-popup {
+    width: 31.5em !important;
+}
+
+.table-hover tbody tr:hover td {
+  background: blanchedalmond;
+}
+
+@media only screen and (max-width: 600px) {
+    .partnerAuth {
+        width: 100%;
+    }
+}
+
+/* .............. */
+table {
+  width: 100%;
+}
+
+tr {
+  margin-bottom: 20px;
+}
+
+td,
+th {
+  padding: 15px !important;
+  border: 1px solid #ccc !important;
+}
+
+@media all and (max-width:678px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+}
+
+/* .............. */
