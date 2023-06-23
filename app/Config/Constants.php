@@ -78,24 +78,6 @@ defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-//paytm credentials
-defined('PAYTM_ENVIRONMENT')   || define('PAYTM_ENVIRONMENT', 'PROD');
-defined('PAYTM_MID')           || define('PAYTM_MID', 'PQCyUM74065221635727');
-defined('PAYTM_MERCHANT_KEY')  || define('PAYTM_MERCHANT_KEY', 'AZ3cm1Z6p@hXrvXr');
-
-$PAYTM_STATUS_QUERY_NEW_URL='https://securegw-stage.paytm.in/merchant-status/getTxnStatus';
-$PAYTM_TXN_URL='https://securegw-stage.paytm.in/theia/processTransaction';
-
-if (PAYTM_ENVIRONMENT == 'PROD') {
-	$PAYTM_STATUS_QUERY_NEW_URL='https://securegw.paytm.in/merchant-status/getTxnStatus';
-	$PAYTM_TXN_URL='https://securegw.paytm.in/theia/processTransaction';
-}
-
-define('PAYTM_REFUND_URL', '');
-define('PAYTM_TXN_URL', $PAYTM_TXN_URL);
-define('PAYTM_STATUS_QUERY_URL', $PAYTM_STATUS_QUERY_NEW_URL);
-define('PAYTM_STATUS_QUERY_NEW_URL', $PAYTM_STATUS_QUERY_NEW_URL);
-
 //dynamic base url
 $base = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']) : 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']);
 
