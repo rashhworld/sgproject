@@ -295,17 +295,6 @@ class PartnerControl extends BaseController
             } else {
                 // $apiKey = urlencode('NTgzMzY2NzE1NDc5MzkzODM2NzI1OTU1NGU1MjQxNTc=');
 
-                // $numbers = urlencode('917504769379');
-                // $sender = urlencode('SJ-PROJ');
-                // $message = rawurlencode('This is your message');
-
-                // $data = 'apikey=' . $apiKey . '&numbers=' . $numbers . "&sender=" . $sender . "&message=" . $message;
-
-                // $ch = curl_init('https://api.textlocal.in/send/?' . $data);
-                // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                // curl_exec($ch);
-                // curl_close($ch);
-
                 $this->session->set('sMobile', $mOTP);
                 $response = ['type' => 1, 'vM' => TRUE, 'msg' => $mOTP,];
             }
